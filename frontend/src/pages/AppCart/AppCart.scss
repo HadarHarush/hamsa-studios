@@ -1,0 +1,10 @@
+@import '../../assets/scss/setup/variables';
+
+.app-cart {
+  .cart-blocks-list {
+    margin-bottom: 3vh;
+  }
+  form {
+    direction: rtl;
+  }
+}

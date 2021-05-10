@@ -1,0 +1,98 @@
+@import '../../../assets/scss/setup/variables';
+
+.cart-block-preview-container {
+  flex: 0 0 20vh;
+  perspective: 700px;
+  .cart-block-preview {
+    position: relative;
+    .block-preview-img {
+      width: 100%;
+    }
+    .block-img,
+    .block-img.size-1015.lay,
+    .block-img.size-2030.lay {
+      width: 80%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform-origin: right;
+      -webkit-clip-path: polygon(9% 1%, 99% 0%, 92% 1000%, 12% 100%);
+      transform: translate(-71%, -49%) scaleY(1) skewY(9deg) rotateY(-32deg);
+    }
+    .block-img.size-1520.lay {
+      width: 80%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform-origin: right;
+      -webkit-clip-path: polygon(10% 0%, 99% 0%, 92% 1000%, 12% 100%);
+      transform: translate(-71%, -49%) scaleY(0.9) skewY(9deg) rotateY(-32deg);
+    }
+    .block-img.size-1015.stand,
+    .block-img.size-2030.stand {
+      width: 56%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform-origin: bottom;
+      transform: translate(-10%, -97%) rotateZ(-90deg) rotateX(43deg)
+        skewX(-8deg);
+      -webkit-clip-path: polygon(-2% 0%, 101% 1%, 100% 99%, 6% 100%);
+    }
+    .block-img.size-1520.stand {
+      width: 56%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform-origin: bottom;
+      transform: translate(-10%, -97%) rotateZ(-90deg) rotateX(35deg)
+        skewX(-8deg);
+      -webkit-clip-path: polygon(2% 2%, 99% 2%, 100% 99%, 6% 100%);
+    }
+
+    .size-label {
+      position: absolute;
+      bottom: 5%;
+      left: 30%;
+      transform: translate(-50%, -30%);
+      padding: 0.2rem 0.6rem;
+      background-color: $weak-2;
+    }
+  }
+  label {
+    margin-bottom: 0.5rem;
+    > *:not(:last-child) {
+      margin-inline-end: 0.7rem;
+    }
+    .checkbox {
+      width: 1.14rem;
+      height: 1.14rem;
+      border-radius: 50%;
+      border: 1px solid #dddbda;
+      .checked {
+        width: 0.57rem;
+        height: 0.57rem;
+        background: $secondery;
+        border-radius: 50%;
+        display: none;
+        &.active {
+          display: block;
+        }
+      }
+    }
+    .remove-block-button {
+      position: absolute;
+      top: 7%;
+      left: 10%;
+      transform: translate(-10%, -10%);
+      width: 18px;
+      height: 18px;
+      background: $red;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 60%;
+      }
+    }
+  }
+}

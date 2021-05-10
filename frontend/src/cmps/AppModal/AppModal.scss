@@ -1,0 +1,18 @@
+.modal-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(80, 80, 80, 0.623);
+  z-index: 1000;
+}
+
+.hamborger-modal-container {
+  background-color: unset;
+  transform: translate(100%, 0);
+  transition: transform 0.4s;
+  &.active {
+    transform: translate(0, 0);
+  }
+}

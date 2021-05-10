@@ -1,0 +1,8 @@
+.App {
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  grid-template-columns: 1fr;
+  min-height: 100%;
+  position: relative;
+  overflow-y: hidden;
+}

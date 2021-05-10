@@ -1,0 +1,21 @@
+@import '../../../assets/scss/setup/variables';
+
+.primary-button {
+  background: $primary;
+  &:hover {
+    background-color: darken($primary, 5%);
+  }
+  &:active {
+    background-color: darken($primary, 10%);
+  }
+  &[disabled] {
+    background-color: $weak-1;
+  }
+  align-self: center;
+  padding: 11px 58px;
+  border-radius: 4px;
+  margin-bottom: 15vh;
+  > * {
+    color: white;
+  }
+}

@@ -1,0 +1,1 @@
+export { DeliveryTipTxt } from './DeliveryTipTxt'

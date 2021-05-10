@@ -1,0 +1,50 @@
+@import '../../assets/scss/setup/variables';
+
+.app-cropper-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  .buttons-container {
+    padding: 20px 0;
+    > *:not(:last-child) {
+      margin-bottom: 20px;
+    }
+    .edit-bar {
+      > *:not(:last-child) {
+        margin-inline-end: 1rem;
+      }
+      button {
+        background-color: $secondery;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        > img {
+          width: 50%;
+        }
+      }
+    }
+    .final-bar {
+      > *:not(:last-child) {
+        margin-inline-end: 1.5rem;
+      }
+      button {
+        &.crop {
+          background-color: $primary;
+        }
+        &.close {
+          background-color: $red;
+        }
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        > img {
+          width: 50%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../../assets/scss/setup/variables';
+
+.quantity-bar {
+  direction: ltr;
+  max-width: 220px;
+  margin-inline: auto;
+  border: 1px solid #eff0f5;
+  border-radius: 0.28rem;
+  button {
+    padding: 0.6rem 0.9rem;
+  }
+}

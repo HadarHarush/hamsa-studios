@@ -1,0 +1,1 @@
+export { MoreInfoModal } from './MoreInfoModal'

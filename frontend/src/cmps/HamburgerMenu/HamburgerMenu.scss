@@ -1,0 +1,27 @@
+@import '../../assets/scss/setup/variables';
+
+.hamburger-menu {
+  background-color: $primary;
+  color: white;
+  max-width: 250px;
+  height: 100vh;
+  padding: 13vh 0;
+  position: relative;
+  .close-button {
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+  }
+  nav {
+    padding-top: 13vh;
+    > *:not(:last-child) {
+      margin-bottom: 1.5rem;
+    }
+    a {
+      font-size: 16px;
+      line-height: 21.79px;
+      max-width: 20ch;
+      text-align: center;
+    }
+  }
+}

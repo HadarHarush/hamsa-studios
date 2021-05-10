@@ -1,0 +1,9 @@
+.delivery-tip-container {
+  p {
+    max-width: 27ch;
+    text-align: center;
+  }
+  > div > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+}

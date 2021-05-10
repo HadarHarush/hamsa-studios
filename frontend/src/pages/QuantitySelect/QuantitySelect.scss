@@ -1,0 +1,18 @@
+.quantity-select {
+  overflow-x: hidden;
+  main {
+    .quantity-summery-txt {
+      // margin: 0 auto 30px;
+      margin: 0 auto 3vh;
+    }
+    .quantity-bar {
+      // margin: 0 auto 15px;
+      margin: 0 auto 1.5vh;
+    }
+    .delivery-tip-container {
+      margin: 0 auto;
+      max-width: 27ch;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.main-container {
+  width: 100%;
+  max-width: 1040px;
+  margin-inline: auto;
+}
+
+@media (max-width: $break-wide) {
+  .main-container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: $break-narrow) {
+  .main-container {
+    width: 100%;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin: unset;
+  }
+}

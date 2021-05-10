@@ -1,0 +1,36 @@
+@import '../../../assets/scss/setup/variables';
+
+.color-select-bar {
+  max-width: 60%;
+  margin: auto;
+  border: 1px solid #e7e7e7;
+  .option-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 0.2fr 2fr;
+    padding: 1rem 0.7rem;
+    .price-txt {
+      margin-inline-start: 1rem;
+    }
+  }
+  .option-grid.active {
+    background-color: $weak-2;
+  }
+
+  .block-color-square {
+    width: 0;
+    height: 0;
+    padding-left: 100%;
+    padding-top: 100%;
+    border: 1px solid $weak-2;
+  }
+  .option-grid.natural .block-color-square {
+    background-color: $block-natural;
+  }
+  .option-grid.hot .block-color-square {
+    background-color: $block-hot;
+  }
+  .option-grid.white .block-color-square {
+    background-color: $block-white;
+  }
+}

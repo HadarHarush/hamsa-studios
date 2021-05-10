@@ -1,0 +1,1 @@
+export { QuantitySummeryTxt } from './QuantitySummeryTxt'

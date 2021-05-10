@@ -1,0 +1,71 @@
+@import '../../assets/scss/setup/variables';
+
+.block-preview-container {
+  label {
+    position: relative;
+    perspective: 700px;
+    .block-preview-img {
+      width: 30vh;
+      max-width: 250px;
+    }
+    .upload-button {
+      position: absolute;
+      /* transform: translate(54px, 70px); */
+      background: $weak-2;
+      padding: 5px 10px;
+      border-radius: 50px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .block-img,
+    .block-img.size-1015.lay,
+    .block-img.size-2030.lay {
+      width: 80%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform-origin: right;
+      -webkit-clip-path: polygon(9% 1%, 99% 0%, 92% 1000%, 12% 100%);
+      transform: translate(-71%, -49%) scaleY(1) skewY(9deg) rotateY(-32deg);
+    }
+    .block-img.size-1520.lay {
+      width: 80%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform-origin: right;
+      -webkit-clip-path: polygon(10% 0%, 99% 0%, 92% 1000%, 12% 100%);
+      transform: translate(-71%, -49%) scaleY(0.9) skewY(9deg) rotateY(-32deg);
+    }
+    .block-img.size-1015.stand,
+    .block-img.size-2030.stand {
+      width: 56%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform-origin: bottom;
+      transform: translate(-10%, -97%) rotateZ(-90deg) rotateX(43deg)
+        skewX(-8deg);
+      -webkit-clip-path: polygon(-2% 0%, 101% 1%, 100% 99%, 6% 100%);
+    }
+    .block-img.size-1520.stand {
+      width: 56%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform-origin: bottom;
+      transform: translate(-10%, -97%) rotateZ(-90deg) rotateX(35deg)
+        skewX(-8deg);
+      -webkit-clip-path: polygon(2% 2%, 99% 2%, 100% 99%, 6% 100%);
+    }
+  }
+  .size-label {
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+    transform: translate(-50%, -30%);
+    padding: 0.2rem 0.6rem;
+    background-color: $weak-2;
+  }
+}

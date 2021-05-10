@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+// Scroll-bar:
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 600px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  * {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+body {
+  margin: 0;
+  direction: rtl;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+  min-height: 100%;
+}
+
+main {
+  padding-bottom: 6vh;
+  flex-grow: 1;
+}
+
+button {
+  background-color: unset;
+  outline: unset;
+  border: unset;
+  padding: unset;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: unset;
+  color: unset;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: unset;
+}

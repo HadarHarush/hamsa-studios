@@ -1,0 +1,123 @@
+@import '../../assets/scss/setup/variables';
+
+.more-info-modal {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: transform 0.4s;
+  transform: translate(0, 90%);
+  background: #ffffff;
+  box-shadow: 0px -1px 4px rgba(0, 0, 0, 0.25);
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  z-index: 100;
+  padding: 2vh;
+  > h2 {
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, 0);
+    opacity: 1;
+    transition: opacity 0.4s;
+  }
+  &.active {
+    transform: translate(0, 0);
+    > h2 {
+      opacity: 0;
+    }
+    .content {
+      opacity: 1;
+    }
+  }
+  .content {
+    height: 500px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.4s;
+    position: relative;
+    .close-button {
+      position: fixed;
+      top: 2vh;
+      left: 2vh;
+    }
+    h1 {
+      margin: 0 auto 5vh;
+    }
+    h2,
+    p {
+      text-align: start;
+    }
+    .ad-container {
+      margin-bottom: 1vh;
+      img {
+        width: 100%;
+        margin-top: 1rem;
+      }
+    }
+    .gallery-container {
+      margin-bottom: 5vh;
+      h2 {
+        margin-bottom: 1rem;
+      }
+      .gallery {
+        overflow-x: auto;
+        > * {
+          // flex: 0 0 18vh;
+          max-width: 15vh;
+          /* width: 17vh; */
+          object-fit: cover;
+          max-height: 15vh;
+        }
+        > *:not(:last-child) {
+          margin-inline-end: 1.5vh;
+        }
+      }
+    }
+    .reviews-container {
+      margin-bottom: 1vh;
+      overflow-x: auto;
+      > * {
+        position: relative;
+        flex: none;
+        max-width: 250px;
+        background: $weak-2;
+        padding: 0.92rem 1.78rem;
+        padding-left: 4.85rem;
+        border-radius: 4px;
+        margin-bottom: 30px;
+        p.small {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2; /* number of lines to show */
+          -webkit-box-orient: vertical;
+        }
+        .bubble-triangle {
+          position: absolute;
+          background: $weak-2;
+          width: 25px;
+          height: 13px;
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+          bottom: 0;
+          transform: translate(0, 100%);
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 80%;
+          width: 0;
+          height: 0;
+          border: 17px solid transparent;
+          border-top-color: $weak-2;
+          border-bottom: 0;
+          margin-left: -17px;
+          margin-bottom: -17px;
+        }
+      }
+      > *:not(:last-child) {
+        margin-inline-end: 1rem;
+      }
+    }
+  }
+}
